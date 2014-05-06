@@ -97,6 +97,8 @@ class Arm{
         void targetCallback(const geometry_msgs::Vector3::ConstPtr &msg);
         void moveCallback(const std_msgs::Empty::ConstPtr &msg);
         matrix<double,NUMBER_OF_JOINTS,1> dynamic_torque();
+        matrix<double,NUMBER_OF_JOINTS,1> dynamic_torque(matrix<double,NUMBER_OF_JOINTS,1> VirtualForce);
+        
         void printStatus(const geometry_msgs::Twist::ConstPtr &msg);
    
 };

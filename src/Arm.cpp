@@ -492,10 +492,17 @@ matrix<double,NUMBER_OF_JOINTS,1> Arm::dynamic_torque(){
 
 
     tau_motor = trans(motorDecoupling)*tau_joint;
-      cout << "Motor angles = " <<  endl << theta_joint << endl << "Joint torques = " << endl << tau_joint << endl << "Motor torques = " << endl << tau_motor << endl;
+      //cout << "Motor angles = " <<  endl << theta_joint << endl << "Joint torques = " << endl << tau_joint << endl << "Motor torques = " << endl << tau_motor << endl;
 
       return tau_motor;
 }
+
+
+matrix<double,NUMBER_OF_JOINTS,1> Arm::dynamic_torque(matrix<double,3,1> VirtualForce);
+	   return Arm::dynamic_torque()-trans(getJv(LAST_FRAME))*VirtualForce;	   
+}
+
+
 
 void Arm::publishtorque(){
 
