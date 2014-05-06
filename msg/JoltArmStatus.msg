@@ -1,0 +1,4 @@
+Test_arm/MotorStatus shoulder
+Test_arm/MotorStatus elbow
+Test_arm/MotorStatus wrist_roll
+Test_arm/MotorStatus wrist_pitch

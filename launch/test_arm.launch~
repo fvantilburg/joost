@@ -1,0 +1,9 @@
+<launch>
+
+	<param name="motor_port" value="motor_comm"/>
+	<param name="motor_config_arm" value="$(find test_arm)/cfg/motors.xml"/>
+
+	<node name="test_arm" pkg="test_arm" type="Test_arm_bin" output="screen" respawn="false"/>
+	
+	<node name="PScontroller" pkg="test_arm" type="pscontrollerbin" output="screen"/>
+</launch>

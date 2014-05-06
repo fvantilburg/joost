@@ -1,0 +1,35 @@
+<configuration>
+ <elbow>
+  <ID>110</ID>
+  <anglelowerlimit>-3</anglelowerlimit>
+  <angleupperlimit>3</angleupperlimit>
+  <gearboxratiomotor>439</gearboxratiomotor>
+  <acceleration>0.7</acceleration>
+  <pposition>0.4</pposition>
+  <iposition>0.1</iposition>
+  <dposition>0.5</dposition>
+  <ilposition>5.0</ilposition>
+  <pspeed>0.4</pspeed>
+  <ispeed>0.1</ispeed>
+  <dspeed>0.5</dspeed>
+  <ilspeed>5.0</ilspeed>
+  <offsetmotor>-0.505</offsetmotor>
+ </elbow>
+ <shoulder>
+  <ID>109</ID>
+  <anglelowerlimit>-1.354</anglelowerlimit>
+  <angleupperlimit>1.75</angleupperlimit>
+  <gearboxratiomotor>549</gearboxratiomotor>
+  <acceleration>0.7</acceleration>
+  <pposition>0.07</pposition>
+  <iposition>0.0</iposition>
+  <dposition>2.0</dposition>
+  <ilposition>5.0</ilposition>
+  <pspeed>0.07</pspeed>
+  <ispeed>0.0</ispeed>
+  <dspeed>2.0</dspeed>
+  <ilspeed>5.0</ilspeed>
+  <offsetmotor>1.815</offsetmotor>
+ </shoulder>
+</configuration>
+

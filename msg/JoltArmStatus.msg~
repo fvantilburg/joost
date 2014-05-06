@@ -1,0 +1,4 @@
+armpositioning/MotorStatus shoulder
+armpositioning/MotorStatus elbow
+armpositioning/MotorStatus wrist_roll
+armpositioning/MotorStatus wrist_pitch

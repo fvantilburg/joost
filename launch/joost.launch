@@ -1,0 +1,9 @@
+<launch>
+
+	<param name="motor_port" value="motor_comm"/>
+	<param name="motor_config_arm" value="$(find joost)/cfg/motors.xml"/>
+
+	<node name="joost" pkg="joost" type="joost_bin" output="screen" respawn="false"/>
+	
+	<node name="PScontroller" pkg="joost" type="pscontrollerbin" output="screen"/>
+</launch>
